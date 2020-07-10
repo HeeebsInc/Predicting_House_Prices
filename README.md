@@ -29,6 +29,6 @@ Through our analysis, we were able to construct 95% confidence intervals for hou
 
 We built the model by splitting the dataset into 80% training and 20% testing. After a lot of tinkering and trial and error, we got residuals that we were happy with:
 
-![Residual plot]("Images/Screen Shot 2020-07-10 at 9.51.07 AM.png")
+![Residual plot](https://github.com/HeeebsInc/Project2Flatiron/blob/master/Images/Screen%20Shot%202020-07-10%20at%209.51.07%20AM.png?raw=true)
 
 Once we knew we were looking at a solid set of columns as predictors, we retrained the model on the entire dataset and used it to predict prices of houses on Zillow.
