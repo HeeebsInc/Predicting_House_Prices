@@ -27,4 +27,8 @@ This repository contains the following files:
 
 Through our analysis, we were able to construct 95% confidence intervals for housing prices. Approximately 94% of the data was for houses that sold for less than $1,000,000 (in 2014-2015), and approximately 99% of the data was for houses that sold for less than $2,000,000, so the model's accuracy decreases for more expensive houses due to lack of available training data.
 
-We built the model by splitting the dataset into 80% training and 20% testing. When we were happy with the residuals plot, we trained on the entire dataset in order to predict estimates for homes listed on Zillow.
+We built the model by splitting the dataset into 80% training and 20% testing. After a lot of tinkering and trial and error, we got residuals that we were happy with:
+
+![Residual plot](Images/Screen Shot 2020-07-10 at 9.51.07 AM.png)
+
+Once we knew we were looking at a solid set of columns as predictors, we retrained the model on the entire dataset and used it to predict prices of houses on Zillow.
