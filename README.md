@@ -20,9 +20,13 @@ Predictors:
 We also used the <a href="https://developer.mapquest.com/">MapQuest API</a> to retrieve city information, based on the columns **lat** and **long**.
 
 This repository contains the following files:
+* **MappingFunctions.ipynb** - Contains lat/long scatterplots using hues to display patterns in various predictors.
+* **EDA.ipynb** - Contains visualizations and numerical summaries from our initial exploratory data analysis.
+* **Regression.ipynb** - Contains functions for transforming the data, including taking the log and one-hotting, in addition to performing the actual regression analysis.
+* **predicting-housing-prices.pdf** - The slides from our final presentation on July 7, 2020.
 
-* **regression.ipynb** - Contains functions for transforming the data, including taking the log and one-hotting, in addition to performing the actual regression analysis.
-* **eda.ipynb** - Contains visualizations and numerical summaries from our initial exploratory data analysis.
+The data folder contains the following files:
+* **kc_house_data_original.csv** - The original, unmodified dataset.
 * **updated_housing_data.csv** - A modified version of the original csv which contains new columns for ratios and city information.
 
 Through our analysis, we were able to construct 95% confidence intervals for housing prices. Approximately 94% of the data was for houses that sold for less than $1,000,000 (in 2014-2015), and approximately 99% of the data was for houses that sold for less than $2,000,000, so the model's accuracy decreases for more expensive houses due to lack of available training data.
