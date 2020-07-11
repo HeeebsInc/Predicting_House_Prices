@@ -17,7 +17,7 @@ Predictors:
 * **floors**: The number of floors, where 1/2 indicates a partially-finished floor or a loft
 * **zipcode**: The house's zipcode
 
-We also used the <a href="https://developer.mapquest.com/">MapQuest API</a> to retrieve city information, based on the columns **lat** and **long**.
+We also used the <a href="https://developer.mapquest.com/">MapQuest API</a> to retrieve city information, based on the columns **lat** and **long**. [[code]](MappingFunctions.ipynb)
 
 This repository contains the following files:
 * **MappingFunctions.ipynb** - Contains lat/long scatterplots using hues to display patterns in various predictors.
