@@ -31,6 +31,7 @@ The data folder contains the following files:
 
 Through our analysis, we were able to construct 95% confidence intervals for housing prices. Approximately 94% of the data was for houses that sold for less than $1,000,000 (in 2014-2015), and approximately 99% of the data was for houses that sold for less than $2,000,000, so the model's accuracy decreases for more expensive houses due to lack of available training data.
 
+## Linear Regression
 We built the model by splitting the dataset into 80% training and 20% testing. After a lot of tinkering and trial and error, we got residuals that we were happy with:
 
 ![Residual plot](Images/ResidualPlot.png)
@@ -38,3 +39,12 @@ We built the model by splitting the dataset into 80% training and 20% testing. A
 ![ActualPredicted](Images/PredictActual.png)
 
 Once we knew we were looking at a solid set of columns as predictors, we retrained the model on the entire dataset and used it to [predict prices of houses](Regression.ipynb) on Zillow.
+
+
+Once the regression model was finished, we used the same columns within a sequential neural netowrk architecture and compared the results. 
+
+## Sequential Neural Netowrk
+[[notebook]](NN/NN.ipynb)
+
+![NN Residual](Images/NNScatter.png)
+![NN Loss](Images/NNLoss.png)
